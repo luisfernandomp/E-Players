@@ -1,3 +1,6 @@
+/* Declaração de variáveis no CSS
+    * :root
+*/
 :root{  
      /* Nome das variáveis  */
     --background: #1e1c21;
@@ -9,13 +12,14 @@
     padding: 0;
     margin: 0;
 }
-/* Declaração de variáveis no CSS
-    * :root
-
-*/
 body{
     background-color: var(--background);
     font-family: 'Titillium Web', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
 }
 .gradient{
     background: rgba(252,30,137,1);
@@ -26,4 +30,27 @@ body{
     background: -ms-linear-gradient(left, rgba(252,30,137,1) 0%, rgba(114,119,195,1) 100%);
     background: linear-gradient(to right, rgba(252,30,137,1) 0%, rgba(114,119,195,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc1e89', endColorstr='#7277c3', GradientType=1 );
+}
+.container{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+header .container{  
+    display: flex;
+    padding: 20px 0px;
+}
+header ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+header nav{
+    width: 60%;
+}
+header a{
+    text-transform: uppercase;
+}
+header img{
+    margin-right;: 100px
 }
