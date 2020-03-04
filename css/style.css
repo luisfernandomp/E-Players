@@ -109,7 +109,7 @@ header img{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 0;    
+    padding: 6git 0px 0;    
 }
 .ligas img{
     height: 143px;
@@ -127,11 +127,44 @@ header img{
     margin-bottom: 45px;
 }
 .sobre{
+    position: relative;
+    display: flex;
+    margin-top: 40px;
+}
+.sobre_fundo{
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
-    min-height: 200px;
+    min-height: 700px;
     background-image: url(../images/Teams/T6.jpg);
     clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+}
+.sobre_fundo_filtro{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(72,61,139, 0.377);
+}
+.sobre img{
+    position: absolute;
+    z-index: 3;
+    left: 250px;
+    top: -50px;
+    width: 100%;
+    max-width: 40%;
+}
+.texto_sobre{
+    width: 30%;
+    margin-right: 250px;
+    text-align: right;
+    text-shadow: rgba(0, 0, 0, 0.349) 0.1em 0.1em 0.9em
+}
+.texto_sobre h2{
+    font-size: 40px;
+}
+.texto_sobre p{
+    font-size: 20px;
 }
