@@ -237,6 +237,70 @@ header img{
 }
 footer{
     background-color: black;
+    /* background: rgb(0,0,0); */
+    /* background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(30,28,33,1) 30%, rgba(30,28,33,1) 100%); */
+    min-height: 250px;
+    padding: 2em 0;
     box-shadow: 0px -6px 10px black;
-    
+}
+footer .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer nav h3 {
+    color: #646464;
+    font-size: 1.6em;
+    margin-bottom: 1em;
+}
+footer nav ul{
+    list-style-type: none;
+}
+footer nav li{
+    margin: 0.5em 0;
+    font-size: 1em;
+}
+footer nav a:hover{
+    color: var(--purple);
+}
+/* Ícones rodapé */
+.social_media{
+    display: flex;
+    margin-top: 0.6em;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, rgba(252,30,137,1) 0%, rgba(114,119,195,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    font-size: 2.5em;
+}
+/* Início configuração form do rodapé */
+footer form{
+    display: flex;
+    flex-direction: column;
+}
+footer form label{
+    font-size: 1.5em;
+    margin-bottom: 0.4em;
+    font-weight: bold;
+    color: #646464;
+}
+footer form input{
+    height: 2em;
+    outline: none;
+    width: 15em;
+}
+.btn{
+    height: 2.3em;
+    /* padding: 0px 10px; */
+    text-decoration: none ;
+    border: none;
+    margin-left: -3.9px;
+    color: white;
+    padding: 0em 1.8em;
+}
+footer p{
+    text-align: center;
+    font-size: 1em;
+    color: #6f6f6f;
+    text-transform: uppercase;
 }
