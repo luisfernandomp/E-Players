@@ -71,12 +71,17 @@ header img{
 }
 .partidas .container{
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    justify-content: space-around;
+    align-items: center;
     flex-flow: wrap;
 } 
+.proximas_partidas{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
 .partida{
-    padding: 0px 0px 10px 0px;
+    padding: 0px 0px 10px 10px;
 }
 .partida img{
     width: 40px;
@@ -152,9 +157,9 @@ header img{
     position: absolute;
     z-index: 3;
     left: 250px;
-    top: -50px;
+    top: -40px;
     width: 100%;
-    max-width: 40%;
+    max-width: 35%;
 }
 .texto_sobre{
     width: 30%;
@@ -170,7 +175,8 @@ header img{
 }
 .content{
     display: flex;
-    margin-top: 190px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     justify-content: space-between;
 
 }
@@ -318,7 +324,7 @@ footer p{
 }
 .form_cadastro{
     width: 100%;
-    padding: 160px;
+    padding: 80px;
     max-width: 400px;
     margin: 10em auto;
     box-shadow: -1px 4px 5px #000, -1px -6px 10px #7278c3    ;
@@ -375,3 +381,74 @@ select{
 
 /* 
     justify-content: unset; PESQUISAR O QUE FAZ */
+
+
+/* Início Responsividade */
+/*  1200px */
+@media(max-width: 1200px){
+.content{
+    margin-top: 30px;
+}
+.sobre img{
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    max-width: 50%;
+}
+.texto_sobre h2{
+    font-size: 40px;
+}
+.texto_sobre {
+    width: 45%;
+    margin-right: 150px;
+}
+}/* Fim Media Query 1200px */
+@media(max-width: 800px){
+    .container{
+        width: 90%;
+    }
+    header .container img{
+        max-width: 180px;
+    }
+    .partidas .container{
+        flex-flow: nowrap;
+    }
+    .em_andamento{
+        width: 30%;
+        align-items: center;
+        margin-right: 100px;
+    }
+    .proximas_partidas{
+        width: 70%;
+        flex-flow: wrap;
+    }
+    .sobre img{
+        position: absolute;
+        z-index: 3;
+        width: 100%;
+        left: -95px;
+        top: 10px;
+        max-width: 80%;
+    }
+    .texto_sobre h2{
+        font-size: 25px;
+    }
+    .texto_sobre {
+        width: 50%;
+        margin-right: 25px;
+    }
+    .texto_sobre p{
+        font-size: 18px;
+    }
+    .ligas h4{
+        font-size: 30px;
+    }
+    .ligas h3{
+        height: 60px;
+    }
+    .ligas img{
+        height: 90px;
+    }
+}
