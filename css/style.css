@@ -451,4 +451,22 @@ select{
     .ligas img{
         height: 90px;
     }
+    .card img{
+        margin-top: 2.5em;
+        margin-left: 1em;
+    }
+    footer form label {
+        font-size: 1em;
+        margin-bottom: -1em;
+    }
+    footer form input {
+        width: 10em;
+    }
+    .social_media{
+        display: flex;
+        justify-content: space-around;
+    }
+    .social_media i{
+        font-size: 30px;
+    }
 }
