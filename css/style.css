@@ -370,7 +370,9 @@ select{
 .btn{
     margin-top: 20px;
 }
-
+header .fa-bars{
+    display: none;
+}
 /* 
 
     .form_cadastro .campo:nth-last-child(n) button{
@@ -468,5 +470,39 @@ select{
     }
     .social_media i{
         font-size: 30px;
+    }
+}
+
+/* CELULARES */
+@media(max-width: 460px){
+    header .fa-bars{
+        color: var(--purple);
+        font-size: 3em;
+        display: block;
+    }
+    header .container .icon_mobile{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    header .container .icon_mobile a{
+        margin-left: 6.5em;
+    }
+    #menu{
+        position: absolute;
+        top: 5.5em;
+        left: 0px;
+        width: 100%;
+        background-color: var(--purple);
+        display: none;
+    }
+    #menu ul{
+        flex-direction: column;
+        height: 300px;
+        margin-left: 1em;
+    }
+    #menu a{
+        display: block;
+        padding: 0.5em 0;
     }
 }

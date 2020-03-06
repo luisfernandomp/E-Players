@@ -11,10 +11,15 @@
 <body>
     <header>
         <div class="container">
-            <a href="index.html" title="Acessar a página inicial do site.">
-                <img src="images/Logo.svg" alt="Logo do site E-Players.">
-            </a>
-            <nav>
+            <div class="icon_mobile">
+                <a href="#" onclick="botaoMenu()">
+                    <i class="fas fa-bars"></i>
+                </a>
+                <a href="index.html" title="Acessar a página inicial do site.">
+                    <img src="images/Logo.svg" alt="Logo do site E-Players.">
+                </a>
+            </div>
+            <nav id="menu">
                 <ul>
                     <li><a href="index.html" title="Acessar página inicial.">Início</a></li>
                     <li><a href="#sobre" title="Acessar sessão sobre o projeto.">Sobre</a></li>
@@ -262,6 +267,16 @@
         </div> <!-- Fim container -->
         <p> &copy; COPYRIGHT - Todos os direitos reservados E-Players.</p>
     </footer>
-    
+    <script>
+        function botaoMenu(){
+            var m = document.getElementById("menu");
+            if(m.style.display == "block"){
+                m.style.display = "none";
+            }
+            else{
+                m.style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html>
