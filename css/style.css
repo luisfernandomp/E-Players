@@ -114,7 +114,7 @@ header img{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 6git 0px 0;    
+    padding: 6px 0px 0;    
 }
 .ligas img{
     height: 143px;
@@ -475,10 +475,21 @@ header .fa-bars{
 
 /* CELULARES */
 @media(max-width: 460px){
+    .container{
+        width: 100%;
+    } 
+    header .container{  
+        display: flex;
+        justify-content: space-evenly;
+        padding: 20px 0px;
+    }
     header .fa-bars{
         color: var(--purple);
         font-size: 3em;
         display: block;
+    }
+    header img {
+        margin-right: 160px;
     }
     header .container .icon_mobile{
         display: flex;
@@ -486,7 +497,10 @@ header .fa-bars{
         justify-content: space-around;
     }
     header .container .icon_mobile a{
-        margin-left: 6.5em;
+        margin-left: 6em;
+    }
+    .sobre img{
+        display: none;
     }
     #menu{
         position: absolute;
@@ -504,5 +518,74 @@ header .fa-bars{
     #menu a{
         display: block;
         padding: 0.5em 0;
+    }
+    .partidas .container{
+        width: 96%;
+        justify-content: center;
+    }
+    .texto_sobre {
+        text-align: end;
+        width: 90%;
+    }
+    .texto_sobre h2{
+        font-size: 2em;
+        font-weight: bold;
+    }
+    .banner {
+        height: 350px;
+    }
+    .banner img{
+        max-width: 100px;
+    }
+    .ligas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-flow: wrap;
+        padding: 6px 0px 0;    
+    }
+    .ligas img{
+        height: 120px;
+        padding: 10px 20px;
+    }
+    .ligas div{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .ligas .text_ligas{
+        width: 100%;
+        text-align: center;
+    }
+    .ligas h4 {
+        font-size: 44px;
+    }
+    .content{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .content article{
+        width: 100%;
+    }
+    .content section{
+        width: 85%;
+        margin: auto;
+    }
+    .card{
+        
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1em;
+    }
+    .card img{
+        width: 100%;
+        margin: 0;
+    }
+    .card div{
+        padding: 15px 15px;
+    }
+    .content h3{
+        text-align: center;
     }
 }
